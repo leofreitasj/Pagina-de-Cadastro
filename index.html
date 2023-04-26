@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Página de Cadastro</title>
-    <style> </style>
-
-   <link rel="stylesheet" href="style.css">
+  
+<link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
     <div>
 
-<h1>Cadastro Candidatos</h1>
+<h1 class="titulo">Cadastro Candidatos</h1>
+<p class="subtitulo"> Preencha o Formulário</p>
+
     </div>
-<form >
-    <fieldset>
-        <div>
-            <label>Nome</label>
-            <input type="text" name="nome" id="nome">
+<form>
+    <fieldset class="conjunto">
+        <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required>
         </div>
-        <div>   
-        <label>Sobrenome</label>
-        <input type="text" name="sobrenome" id="sobrenome">
+        <div class="campo">   
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" name="sobrenome" id="sobrenome" required>
     </div>
 </div>
-<div>   
-    <label>Genero</label>
+<div class="campo">   
+    <label for="genero">Genero</label>
         <select id="genero">
             <option></option>
         <option>M</option>
@@ -40,13 +42,13 @@
 
     </fieldset>
 
-    <div>
-        <label> Email</label>
-        <input type="email" nome="email" id="email">
+    <div class="campo">
+        <label for="emai"> Email</label>
+        <input type="email" nome="email" id="email" required>
     </div>
-    <div>
+    <div class="campo">
 
-        <label> Qual das linguagens esta se candidatando?</label>
+        <label class="texto"> Qual das linguagens esta se candidatando?</label>
 
         <label> 
             <input type="radio" name="devweb" value="frontend" checked> Front-end
@@ -60,7 +62,7 @@
         </label>
     </div>
 
-    <div>
+    <div class="campo">
 
         <label>Nivel de Conhecimento</label>
         <select id="nivelconhecimento">
@@ -70,8 +72,8 @@
     </select>
 
     </div>
-<fieldset>
-    <div>
+<fieldset class="conjunto">
+    <div class="marca">
         <label>Conhecimento em quais tecnologias</label>
         <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
         <label for="tecnologias1">HTML</label>
@@ -95,12 +97,12 @@
         <label for="tecnologias10">React</label>
     </div>
 </fieldset>
-<div>
+<div class="campo">
     <br>
     <label>Descreva um pouco de sua experiência:</label>
-    <textarea rows="8" style="width: 26em" id="experiência" nome="experiência"></textarea>
+    <textarea rows="6" style="width: 26em" id="experiência" nome="experiência"></textarea>
 </div>
-
+<button type="submit" class="button">Finalizar</button>
 </form>
 
 </body>

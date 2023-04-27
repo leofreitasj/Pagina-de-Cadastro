@@ -120,3 +120,9 @@ fieldset.conjunto .campo {
 .botao, select{
     cursor: pointer;
 }
+
+.form{
+
+    background: #ffffff;
+}
+    

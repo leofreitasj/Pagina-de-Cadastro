@@ -1,55 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="Pt-br">
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="text/CSS" href="cadastro.css" media="screen">
+    <link rel="stylesheet" href="estilos/style.css">
 
     <title>Página de Cadastro</title>
-  
-
 
 </head>
 <body>
     <div>
 
-<h1 class="titulo">Cadastro Candidatos</h1>
+<h1 class="titulo"><strong> Formulário do Candidato</strong></h1>
 <p class="subtitulo"> Preencha o Formulário</p>
 
     </div>
-<form>
+<form id="formulario">
     <fieldset class="conjunto">
         <div class="campo">
-            <label for="nome">Nome</label>
+            <label for="nome"><strong>Nome:</strong></label>
             <input type="text" name="nome" id="nome" required>
         </div>
         <div class="campo">   
-        <label for="sobrenome">Sobrenome</label>
+        <label for="sobrenome"><strong>Sobrenome:</strong></label>
         <input type="text" name="sobrenome" id="sobrenome" required>
     </div>
 </div>
-<div class="campo">   
-    <label for="genero">Genero</label>
-        <select id="genero">
-            <option></option>
-        <option>M</option>
-        <option>F</option>
-        <option>N/</option>
-    </select>
-
-</div>
-
     </fieldset>
 
     <div class="campo">
-        <label for="emai"> Email</label>
+        <label for="emai"><strong>Email:</strong></label>
         <input type="email" nome="email" id="email" required>
+    </div>
+
+    <div class="campo">   
+        <label for="genero"><strong>Genero:</strong></label>
+            <select id="genero">
+                <option></option>
+            <option>M</option>
+            <option>F</option>
+            <option>N/</option>
+        </select>
+    
     </div>
     <div class="campo">
 
-        <label class="texto"> Qual das linguagens esta se candidatando?</label>
+        <label class="texto"><strong>Qual das linguagens esta se candidatando?</strong></label>
 
         <label> 
             <input type="radio" name="devweb" value="frontend" checked> Front-end
@@ -65,7 +63,7 @@
 
     <div class="campo">
 
-        <label>Nivel de Conhecimento</label>
+        <label class="nivelconhecimento"><strong>Nivel de Conhecimento</strong></label>
         <select id="nivelconhecimento">
         <option>Junior</option>
         <option>Pleno</option>
@@ -74,12 +72,12 @@
 
     </div>
 <fieldset class="conjunto">
-    <div class="marca">
-        <label>Conhecimento em quais tecnologias</label>
+    <div id="check">
+        <label><strong>Conhecimento em quais tecnologias</strong></label>
         <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
         <label for="tecnologias1">HTML</label>
         <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
-        <label for="tecnologias2">CSS</label>
+        <label for="tecnologias2">CSS</label><br><br>
         <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascripit">
         <label for="tecnologias3">Javascripit</label>
         <input type="checkbox" id="tecnologia4" name="tecnologia4" value="C#">
@@ -100,7 +98,7 @@
 </fieldset>
 <div class="campo">
     <br>
-    <label>Descreva um pouco de sua experiência:</label>
+    <label><strong>Descreva um pouco de sua experiência:</strong></label>
     <textarea rows="6" style="width: 26em" id="experiência" nome="experiência"></textarea>
 </div>
 <button class="botao" type="submit" >Finalizar</button>

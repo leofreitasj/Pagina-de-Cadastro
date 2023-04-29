@@ -18,20 +18,22 @@
     margin-left: 10%;
 } 
 
-#check{
-    display: inline-block;
+
+fieldset .conjunto {
+    border:0;
+    
+
 }
 
-
-fieldset {
-    border: 0;
+#check{
+    display: inline-block;
 }
 
 
 body{
    
     display: block;
-    background-color: #03ffbc;
+    background-color: #00ffbb;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     color: #000000;
@@ -46,6 +48,7 @@ input, select, textarea, button {
     font-size: 1em;
     color: #000000;
     border-radius: 5px;
+    
 }
 
 
@@ -77,6 +80,8 @@ fieldset.conjunto .campo {
 }
 
 
+
+
 .campo input[type="text"], .campo input[type="email"],.campo input[type="whatsapp"] , .campo select, .campo textarea {
     padding: 0.2em;
     border: 1px solid #59429d;
@@ -90,8 +95,13 @@ fieldset.conjunto .campo {
 }
 
 
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #E0E0F8;
+.campo input:focus, .campo select:focus, .campo textarea:focus, input:hover, textarea:hover {
+    
+    border-color: #000066;
+    box-shadow: 3px 0px 6px #6652ff;
+    background-color: #66FFFF;
+    color: black;
+    font-weight: bold;
 }
 
 

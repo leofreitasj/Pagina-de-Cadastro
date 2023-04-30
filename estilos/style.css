@@ -3,6 +3,12 @@
     padding: 0;
     
 }
+form {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    background-color: #00ccbb;
+    max-width: 500px;
+}
 
 
 #titulo {
@@ -20,7 +26,7 @@
 
 
 fieldset .conjunto {
-    border:0;
+    border:none;
     
 
 }
@@ -38,8 +44,8 @@ body{
     font-size: 1em;
     color: #000000;
     margin-left: 36%;
-    margin-top: 2%;
-    justify-content: center;
+    margin-top: 1%;
+    justify-content: left;
 }
 
 
@@ -63,7 +69,7 @@ input, select, textarea, button {
 
 
 .campo {
-    margin-bottom: 1em;
+    margin-bottom: 1%;
 }
 
 
@@ -112,17 +118,17 @@ fieldset.conjunto .campo {
     margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+   
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     position: absolute;
-    top: 90%;
-    left: 50%;
+    top: 106%;
+    left: 71.5%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
 
 .botao:hover {
-    background: #5e5e5e;
+    background: #0e73a9;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
@@ -130,4 +136,7 @@ fieldset.conjunto .campo {
 .botao, select{
     cursor: pointer;
 }
+
+
+
 
